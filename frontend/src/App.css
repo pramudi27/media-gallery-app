@@ -1,0 +1,139 @@
+html, body, #root, .App {
+  min-height: 100vh;
+  margin: 30px auto;
+  padding: 0;
+  height: auto; /* Prevent forced vertical scroll */
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  background-color: #f7f8fa;
+  color: #222;
+  overflow-x: hidden;
+}
+
+.App {
+  text-align: center;
+  background-color: #f7f8fa;
+}
+
+/* Main content area (below navbar) */
+.main-content {
+  padding-top: 72px;         /* 56px navbar + 16px breathing room */
+  min-height: calc(100vh - 56px);
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  font-weight: 600;
+  color: #282c34;
+  margin-top: 0.8em;
+  margin-bottom: 0.5em;
+}
+
+/* Form styles */
+form {
+  margin: 0 auto;
+  padding: 1.5em;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+  max-width: 400px;
+}
+
+/* Inputs and Buttons */
+input, textarea, select, button {
+  display: block;
+  width: 100%;
+  margin: 0.5em 0 1.2em 0;
+  padding: 0.7em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+button {
+  background: #1e90ff;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover, button:focus {
+  background: #1566a9;
+}
+
+a {
+  color: #1e90ff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #10477a;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 2em 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.error {
+  color: #c0392b;
+  background: #fff2f2;
+  border: 1px solid #f2bcbc;
+  border-radius: 4px;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+.success {
+  color: #27ae60;
+  background: #ecf9f2;
+  border: 1px solid #b8eac7;
+  border-radius: 4px;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5em 0;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+th, td {
+  padding: 0.7em 1em;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+th {
+  background: #f4f8fb;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  form, .App, .container, .main-content {
+    max-width: 98vw;
+    padding: 1em;
+  }
+  table, th, td {
+    font-size: 0.95em;
+  }
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

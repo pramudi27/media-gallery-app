@@ -1,0 +1,34 @@
+html, body, #root {
+  height: 100%;
+  margin: 30px auto;
+  padding: 0;
+  box-sizing: border-box;
+  background: #f7f8fa;
+  color: #222;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  background: #f5f7fa;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 95%;
+}
+
+input, textarea, select {
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #1e90ff;
+  box-shadow: 0 0 0 1px #1e90ff22;
+}
