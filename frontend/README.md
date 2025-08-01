@@ -61,3 +61,7 @@ npm install
 npm start
 # Frontend runs on http://localhost:3000
 
+🤖 Note on AI Assistance
+
+Parts of this project—including error fixing, UI suggestions, and troubleshooting were completed with the help of ChatGPT for guidance and code improvement.
+No AI runs as part of the deployed app itself.
